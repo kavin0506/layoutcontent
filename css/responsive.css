@@ -1,9 +1,15 @@
-@media(max-width:768px){
+@media(min-width:320px) and (max-width:768px){
 	.container{
 		width:100%;
 	}
 	.none{
 		display:none;
+	}
+	.testimonilas_card{
+		margin:0px 10px 30px;
+	}
+	.banner_content{
+		text-align:center;
 	}
 	.col-1-fm{
 	width:8.33%;
@@ -47,7 +53,7 @@
 /*for ipad */
 @media(min-width:768px)and (max-width:999px){
 	.container{
-		width:90%;
+		width:100%;
 	}
 	.col-1-fi{
 	width:8.33%;
