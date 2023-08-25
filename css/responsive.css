@@ -11,6 +11,17 @@
 	.banner_content{
 		text-align:center;
 	}
+	.team_card{
+		overflow:unset;
+	}
+	.team_imgage{
+		margin:15px 0;
+	}
+	.team_right{
+		font-size:27px;
+		line-height:2.2;
+		padding-bottom:110px;
+	}
 	.col-1-fm{
 	width:8.33%;
 	padding:0 15px;
@@ -54,6 +65,14 @@
 @media(min-width:768px)and (max-width:999px){
 	.container{
 		width:100%;
+	}
+	.team_card{
+		overflow:unset;
+	}
+	.team_right{
+		font-size:26px;
+		line-height:2.2;
+		padding-bottom:130px;
 	}
 	.col-1-fi{
 	width:8.33%;

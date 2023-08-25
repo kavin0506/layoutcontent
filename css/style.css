@@ -165,7 +165,7 @@ ul.deepdrop{
 /* banner section start */
 
 #banner{
-	background: linear-gradient(#1411116b,#322d2b7a), url(../image/slide-1.jpg);
+	background: linear-gradient(#14111163,#322d2b9e), url(../image/slide-1.jpg);
 	height:600px;
 	background-size:cover;
 	background-position:center;
@@ -414,7 +414,7 @@ ul.deepdrop{
 	background-color:#d96008;
 	display:inline-block;
 	width:10%;
-	top:50px;
+	top:30px;
 	left:90px;
 }
 .service_sub_title{
@@ -618,8 +618,8 @@ ul.deepdrop{
 	display:inline-block;
 	height:1px;
 	width:10%;
-	top:51px;
-	left:116px;
+	top:31px;
+	left:100px;
 	background-color:#d96008;
 }
 .title h2{
@@ -730,7 +730,7 @@ ul.deepdrop{
 	background-color:#d96008;
 	width:10%;
 	height:1px;
-	top:52px;
+	top:32px;
 	left:53px;
 }
 .team_card{
@@ -840,7 +840,7 @@ ul.deepdrop{
 	background-color:#d96008;
 	width:10%;
 	height:1px;
-	top:52px;
+	top:32px;
 	left:53px;	
 }
 .faq_border{
@@ -878,7 +878,7 @@ ul.deepdrop{
 	 padding:40px 0;
  }
 .title{
-	padding:40px 0;
+	padding:20px 0;
 	position:relative;
 }
 .contact_sub_title{
@@ -901,7 +901,7 @@ ul.deepdrop{
 	background-color:#d96008;
 	height:1px;
 	width:10%;
-	top:52px;
+	top:32px;
 	left:86px;
 }
 .contact_info{
