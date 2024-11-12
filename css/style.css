@@ -55,7 +55,7 @@
   /* header section start */
   
 #header{
-	position:sticky;
+	position:fixed;
 	top:0;
 	z-index:999;
 	width:100%;
@@ -96,7 +96,7 @@
 	display:inline-block;
 }
 .primary_button a:hover{
-	background-color:#d96008;		`
+	background-color:#d96008;		
 }
 
 .navlist a{
@@ -113,7 +113,6 @@
 
 .con{
 	align-items:center;
-	padding-top:30px;
 }
 .drop{
 	position:relative;
@@ -165,15 +164,16 @@ ul.deepdrop{
 /* banner section start */
 
 #banner{
-	background: linear-gradient(#14111163,#322d2b9e), url(../image/slide-1.jpg);
-	height:600px;
+	background: linear-gradient(#1411116b,#322d2b7a), url(../image/slide-1.jpg);
+	height:550px;
+	margin-top:80px;
 	background-size:cover;
 	background-position:center;
 }
 .banner_section{
 	display:flex;
 	align-items:center;
-	height:500px;
+	height:600px;
 }
 .banner_content{
 	padding:10px 0;
@@ -260,7 +260,7 @@ ul.deepdrop{
 	font-size:20px;
 }
 .secondary_button{
-	padding-top:25px;
+	padding:25px;
 }
 .secondary_button a{
 	text-decoration:none;
@@ -359,8 +359,8 @@ ul.deepdrop{
 }
 .accordion_list{
 	box-shadow:0px 0px 10px 0px #00000029;
-    padding: 14px 6px;
-	margin:14px 0;
+    padding: 14px 8px;
+	margin:14px 20px;
 }
 .accordion_list_cont{
 	position:relative;
@@ -434,7 +434,8 @@ ul.deepdrop{
 .service_card{
 	display:flex;
 	margin:8px 0;
-	padding:90px 22px;
+	padding:35px 22px;
+	padding-top:50px;
 	box-shadow:0px 0px 20px 0px #00000029;
 	flex-direction:column;
 	align-items:center;
@@ -462,13 +463,23 @@ ul.deepdrop{
 }
 .service_card_cont h2{
 	padding:10px;
+	/* color:#0b2341; */
 }
 .service_card_cont p{
 	font-size:14px;
+	/* color:#0b2341; */
 }
 .service_card:hover{
 	background-color:#ed502e;
 	color:white;
+}
+
+.service_card h2:hover .service_card_cont{
+	color:#fff;
+}
+
+.service_card p:hover .service_card_cont{
+	color:#fff;
 }
 .service_card:hover .service_card_icon{
 	background-color:white;
@@ -512,7 +523,7 @@ ul.deepdrop{
 	font-weight:800;
 }
 .testimon{
-	padding:30px 35px;
+	padding:0 35px;
 }
 .testimonilas_card{
 	box-shadow:0px 0px 20px 0px #00000029;
@@ -721,7 +732,7 @@ ul.deepdrop{
 	font-size:36px;
 	font-weight:800;
 	color:#123a6d;
-	font-family: background-color:#233751;
+	font-family: background-color#233751;
 }
 .team_sub_title::after{
 	content:"";
@@ -747,20 +758,24 @@ ul.deepdrop{
 	position:absolute;
 	width:15%;
 	font-size:20px;
-	line-height:2.5;
+	line-height:2.3;
 	top:1px;
 	left:1px;
 	color:white;
 	text-align:center;
 	background-color:#233751;
 	z-index:3;
-	padding-bottom:71px;
+	height: 450px;
 	opacity:0;
 	visibility:hidden;
 	transition: ease-in-out 0.3s;
 	transform:translateX(-10px);
+	display: flex;
+	flex-direction: column;
 }
 .team_card:hover .team_right{
+	display: flex;
+	flex-direction: column;
 	opacity:1;
 	top:0px;
 	visibility:visible;
@@ -768,7 +783,7 @@ ul.deepdrop{
 	transform:translateX(0);
 }
 .team_bottom h4{
-	font-family:background-color:#233751;
+	font-family:background-color#233751;
 	font-weight:700;
 }
 .team_bottom p{
@@ -930,6 +945,31 @@ ul.deepdrop{
 .contact_info p{
 	font-size:14px;
 }
+.contact_address{
+	color:#848484;
+	font-size:20px;
+	padding:10px 0;
+	font-size:14px;
+	padding:20px 0;
+	box-shadow:0px 0px 20px 0px #00000029;
+	margin-bottom: 10px;
+	text-align:center;
+	padding:35px 0;
+	box-shadow:0px 0px 20px 0px #00000029;
+   
+}
+.contact_address i{
+	font-size:25px;
+	border:1px dotted #d96008;
+	border-radius:50%;
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	width:45px;
+	height:45px;
+	color:#ed502e;
+	background-color:white;
+}
 .contact_info{
 	padding:20px 0;
 	box-shadow:0px 0px 20px 0px #00000029;
@@ -937,7 +977,7 @@ ul.deepdrop{
 	
 }
 .contact_form{
-	padding:10px 20px;
+	padding:23px 20px;
 	box-shadow:0px 0px 20px 0px #00000029;
 }
 .contact_form_input{
@@ -948,11 +988,17 @@ ul.deepdrop{
 	width:47%;
 	padding:10px 8px;
 	outline-color:#ed502e;
+	border: 1px solid;
+	border-color:#80808061;
 }
 .form_input_mail{
 	width:47%;
 	padding:10px 8px;
 	outline-color:#ed502e;
+	border: 1px solid;
+	color: gray;
+	border-color: #80808061;
+
 
 }
 .contact_form_subject{
@@ -962,10 +1008,16 @@ ul.deepdrop{
 	width:100%;
 	padding:10px 8px;
 	outline-color:#ed502e;
+	border: 1px solid ;
+	color: gray;
+	border-color: #80808061;
 }
 .contact_form textarea{
 	width:100%;
 	outline-color:#ed502e;
+	color: gray;
+	border: 1px solid ;
+	border-color:#80808061;
 }
 .contact_form_button{
 	text-align:center;
@@ -1013,6 +1065,7 @@ ul.deepdrop{
 	padding-top:25px;
 	font-size:14px;
 	font-family:"Raleway", sans-serif;
+	line-height:1.5;
 }
 .footer_icon{
 	padding:25px 0;
@@ -1097,17 +1150,19 @@ ul.deepdrop{
 	border:0;
 	outline:0;
 	width:89%;
+	padding-right:140px;
 }
  .footer_from_button{
 	position:absolute;
 	right:10%;
-	padding:10px 32px;
+	padding:11px 32px;
 	border-radius:0 5px 5px 0;
 	background-color:#ed502e;
 	cursor:pointer;
 	border:0px solid;
 	color:white;
 	font-size:16px;
+	
 }
 .top{
 	padding-bottom:40px;
@@ -1116,4 +1171,10 @@ ul.deepdrop{
 	border-top:1px solid #0f2f57;
 	text-align:center;
 	padding:30px;
+	font-size:14px;
+}
+.copyright_cont a{
+	color:#ed502e;
+	text-decoration:none;
+	padding:0 5px;
 }

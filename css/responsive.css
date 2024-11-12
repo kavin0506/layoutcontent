@@ -7,6 +7,7 @@
 	}
 	.testimonilas_card{
 		margin:0px 10px 30px;
+		padding:15px 10px;
 	}
 	.banner_content{
 		text-align:center;
@@ -22,6 +23,19 @@
 		line-height:2.2;
 		padding-bottom:110px;
 	}
+	.accordion_list:hover .accordion_list_hover p{
+	height:auto;
+	}
+	.footer_link{
+		margin-top:25px;
+	}
+	.footer_service{
+		margin-top:25px;
+	}
+	.footer_news{
+		margin-top:25px;
+	}
+	
 	.col-1-fm{
 	width:8.33%;
 	padding:0 15px;
@@ -65,6 +79,9 @@
 @media(min-width:768px)and (max-width:999px){
 	.container{
 		width:100%;
+	}
+	.none{
+		display:none;
 	}
 	.team_card{
 		overflow:unset;
